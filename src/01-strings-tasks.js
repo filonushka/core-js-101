@@ -19,7 +19,7 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  let result = value1.concat('', value2);
+  const result = value1.concat('', value2);
   return result;
 }
 
@@ -35,8 +35,9 @@ function concatenateStrings(value1, value2) {
  *   'b'     => 1
  *   ''      => 0
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+function getStringLength(value) {
+  const strLength = value.length;
+  return strLength;
 }
 
 /**
@@ -52,8 +53,9 @@ function getStringLength(/* value */) {
  *   'John','Doe'      => 'Hello, John Doe!'
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
-function getStringFromTemplate(/* firstName, lastName */) {
-  throw new Error('Not implemented');
+function getStringFromTemplate(firstName, lastName) {
+  const str = (`Hello, ${firstName} ${lastName}!`);
+  return str;
 }
 
 /**
